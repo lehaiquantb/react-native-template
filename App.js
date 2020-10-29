@@ -21,7 +21,7 @@ import { Provider } from 'react-redux';
 import Store from './src/View/Redux/store';
 import Main from './src/View/Component/main';
 import { onChangeLang, onChangeTheme } from './src/View/Redux/action/lang-theme-action';
-
+import { Navigation } from './src/View/Component/Navigation/navigation';
 // import {
 //   Header,
 //   LearnMoreLinks,
@@ -65,7 +65,8 @@ const App = () => {
 
   return (
     <Provider store={Store}>
-      <Main />
+      {/* <Main /> */}
+      <Navigation />
     </Provider>
   );
 }
