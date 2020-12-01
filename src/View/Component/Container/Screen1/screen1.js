@@ -20,4 +20,12 @@ const styles = StyleSheet.create({
 
 });
 
-export default connect()(Screen1);
+export default connect(
+ (state) => {//map state to prop
+        return {
+            lang: state.lang,
+            theme: state.theme,
+        };
+    },
+    {  },//map dispatch to prop
+)(Screen1);
