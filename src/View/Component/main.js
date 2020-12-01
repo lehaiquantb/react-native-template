@@ -18,6 +18,10 @@ class Main extends React.Component {
                 <StatusBar barStyle='dark-content' backgroundColor='transparent' />
                 <Text>Hello</Text>
                 <Button title="Screen1" onPress={() => this.props.navigation.navigate('Screen1')} />
+                <Button title="Screen2" onPress={() => this.props.navigation.navigate('Screen2')} />
+                <Button title="Screen3" onPress={() => this.props.navigation.navigate('Screen3')} />
+                <Button title="Screen4" onPress={() => this.props.navigation.navigate('Screen4')} />
+                <Button title="Screen5" onPress={() => this.props.navigation.navigate('Screen5')} />
                 <View backgroundColor='black'>
                     <Slider style={styles.slider}
                         minimumValue={0}

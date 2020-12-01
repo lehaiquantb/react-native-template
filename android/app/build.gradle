@@ -130,6 +130,8 @@ android {
 
     defaultConfig {
         applicationId "com.test_view"
+        missingDimensionStrategy 'react-native-camera', 'general'
+        multiDexEnabled true
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
